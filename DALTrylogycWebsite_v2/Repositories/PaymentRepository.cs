@@ -178,6 +178,76 @@ namespace DataAccess.Repositories
         }
 
         /// <summary>
+        /// Updates Payments.
+        /// </summary>
+        /// <param name="preference">The idPlataforma.</param>
+        /// <param name="estado">The preference.</param>
+        /// <param name="estado">The preference.</param>
+        /// <returns></returns>
+        public IBaseDALResponse UpdatePaymentMP( string preference, Int32 estado , string  collection, string merchantOrder )
+        {
+            _log.Info("UpdatePaymentMP() Comienzo...");
+            VerifyConnectionAndCommand();
+            var response = new BaseDALResponse();
+            SqlDataAdapter dA = new SqlDataAdapter();
+
+            SqlParameter Prmparametro1 = new SqlParameter();
+            SqlParameter Prmparametro2 = new SqlParameter();
+            SqlParameter Prmparametro3 = new SqlParameter();
+            SqlParameter Prmparametro4 = new SqlParameter();
+
+            try
+            {
+                Prmparametro1.ParameterName = "preference";
+                Prmparametro1.SqlDbType = System.Data.SqlDbType.VarChar;
+                Prmparametro1.Value = preference;
+
+                Prmparametro2.ParameterName = "estado";
+                Prmparametro2.SqlDbType = System.Data.SqlDbType.Int;
+                Prmparametro2.Value = estado;
+
+                Prmparametro3.ParameterName = "collection";
+                Prmparametro3.SqlDbType = System.Data.SqlDbType.VarChar;
+                Prmparametro3.Value = collection;
+
+                Prmparametro4.ParameterName = "merchantOrder";
+                Prmparametro4.SqlDbType = System.Data.SqlDbType.VarChar;
+                Prmparametro4.Value = merchantOrder;
+
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "UPD_PAGOS_MP";
+                Command.Parameters.Add(Prmparametro1);
+                Command.Parameters.Add(Prmparametro2);
+                Command.Parameters.Add(Prmparametro3);
+                Command.Parameters.Add(Prmparametro4);
+
+                Connection.Open();
+                dA.SelectCommand = Command;
+                dA.Fill(response.Results);
+                response.Succeeded = true;
+            }
+
+            catch (Exception ex)
+            {
+                _log.Error($"Ocurrieron Errores. {ex.Message}");
+                response.FillErrorResponse(ex.HResult, ex.Message);
+            }
+            finally
+            {
+                _log.Info("Disposing Data Adapter.");
+                dA?.Dispose();
+                Command?.Dispose();
+                Command = null;
+                _log.Info("Closing connection.");
+                Connection?.Close();
+                _log.Error($"Update() Fin.");
+            }
+
+            return response;
+        }
+
+      
+        /// <summary>
         /// Updates Status Payments.
         /// </summary>
         /// <param name="idPago"></param>
