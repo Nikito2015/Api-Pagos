@@ -2,10 +2,6 @@
 using BLLTrylogycWebsite.Models.Interfaces;
 using BLLTrylogycWebsite.Responses;
 using BLLTrylogycWebsite.Responses.Interfaces;
-using CommonTrylogycWebsite.DTO;
-using CommonTrylogycWebsite.DTO.Extensions;
-using CommonTrylogycWebsite.DTO.Interfaces;
-using DALTrylogycWebsite.DALResponses.Interfaces;
 using DALTrylogycWebsite.Repositories.Interfaces;
 using DataAccess.Repositories;
 using log4net;
@@ -115,6 +111,46 @@ namespace BLLTrylogycWebsite.Models
                     bllUpdatePaymentResponse.Message = "Ocurrieron Errores al actualizó el pago.";
                 }
     
+            }
+            catch (Exception ex)
+            {
+                _log.Error($"Ocurrieron errores al intentar al actualizó el pago {preference}. {ex.Message}");
+                bllUpdatePaymentResponse.Status = Enums.Status.Fail;
+                bllUpdatePaymentResponse.Message = $"Ocurrieron errores al intentar al actualizó el pago.";
+            }
+
+            return bllUpdatePaymentResponse;
+        }
+
+        /// <summary>
+        /// UpdatePaymentMP.
+        /// </summary>
+        /// <param name="preference"></param>
+        /// <param name="estado"></param>
+        /// <param name="collection"></param>
+        /// <param name="merchantOrder"></param>
+        /// <returns></returns>
+        public IBLLResponseBase<bool> UpdatePaymentMP(string preference,int estado,string collection, string merchantOrder)
+        {
+            _log.Info("UpdatePaymentMP() Comienzo...");
+            var bllUpdatePaymentResponse = new BLLResponseBase<bool>();
+
+            try
+            {
+                _log.Info($"Recuperando preference {preference}.");
+                var UpdatePaymenttDalResponse = _paymentRepository.UpdatePaymentMP(preference, estado, collection, merchantOrder);
+                if (UpdatePaymenttDalResponse.Succeeded)
+                {
+                    bllUpdatePaymentResponse.Status = Status.Success;
+                    bllUpdatePaymentResponse.Message = "Se actualizó el pago correctamente.";
+                }
+                else
+                {
+                    _log.Info($"Ocurrieron errores al actualizó el pago {preference}.");
+                    bllUpdatePaymentResponse.Status = Enums.Status.Fail;
+                    bllUpdatePaymentResponse.Message = "Ocurrieron Errores al actualizó el pago.";
+                }
+
             }
             catch (Exception ex)
             {

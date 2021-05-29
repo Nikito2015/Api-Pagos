@@ -1,5 +1,6 @@
 ﻿using CommonTrylogycWebsite.DTO.Interfaces;
 using DALTrylogycWebsite.DALResponses.Interfaces;
+using System;
 
 namespace DALTrylogycWebsite.Repositories.Interfaces
 {
@@ -25,6 +26,15 @@ namespace DALTrylogycWebsite.Repositories.Interfaces
         /// <param name="TransaccionComercioId"></param>
         /// <returns></returns>
         IBaseDALResponse UpdatePayment(int idPlataforma, string preference, string TransaccionComercioId);
+        /// <summary>
+        /// Updates Payments.
+        /// </summary>
+        /// <param name="preference">The idPlataforma.</param>
+        /// <param name="estado">The preference.</param>
+        /// <param name="collection">The preference.</param>
+        /// <param name="merchantOrder">The preference.</param>
+        /// <returns></returns>
+        IBaseDALResponse UpdatePaymentMP(string preference, Int32 estado, string collection, string merchantOrder);
         /// <summary>
         /// Updates Status Payments.
         /// </summary>

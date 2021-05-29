@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DALTrylogycWebsite_v2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DALTrylogycWebsite_v2\bin\Debug\DALTrylogycWebsite_v2.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.11\lib\net45\log4net.dll</HintPath>
     </Reference>
@@ -94,8 +98,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TrylogycWebsite.Common, Version=2020.12.22.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TrylogycWebsite.Common.2020.12.22.2\lib\netstandard2.0\TrylogycWebsite.Common.dll</HintPath>
+    <Reference Include="TrylogycWebsite.Common, Version=2021.1.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\trylogyc.website.common.2021.5.25.1\lib\netstandard2.0\TrylogycWebsite.Common.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -116,11 +121,5 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\DALTrylogycWebsite_v2\DALTrylogycWebsite_v2.csproj">
-      <Project>{5bc9c850-75be-4c33-a424-0766dbdb92a6}</Project>
-      <Name>DALTrylogycWebsite_v2</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

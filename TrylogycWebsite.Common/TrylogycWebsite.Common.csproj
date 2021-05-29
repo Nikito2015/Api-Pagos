@@ -3,9 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2021.01.05.1</Version>
-    <AssemblyVersion>2021.01.05.1</AssemblyVersion>
-    <FileVersion>2021.01.05.1</FileVersion>
+    <Version>2021.05.25.1</Version>
+    <AssemblyVersion>2021.05.25.1</AssemblyVersion>
+    <FileVersion>2021.05.25.1</FileVersion>
+    <PackageId>Trylogyc.Website.Common</PackageId>
+    <Authors>Trylogyc.Website.Common</Authors>
+    <Product>Trylogyc.Website.Common</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

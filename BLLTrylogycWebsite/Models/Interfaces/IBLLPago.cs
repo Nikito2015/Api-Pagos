@@ -28,6 +28,15 @@ namespace BLLTrylogycWebsite.Models.Interfaces
         /// <returns></returns>
         IBLLResponseBase<bool> UpdatePayment(int idPlataforma, string preference, string TransaccionComercioId);
         /// <summary>
+        /// UpdatePaymentMP.
+        /// </summary>
+        /// <param name="preference"></param>
+        /// <param name="estado"></param>
+        /// <param name="collection"></param>
+        /// <param name="merchantOrder"></param>
+        /// <returns></returns>
+        IBLLResponseBase<bool> UpdatePaymentMP(string preference, int estado, string collection, string merchantOrder);
+        /// <summary>
         /// UpdateStatusPayment.
         /// </summary>
         /// <param name="idPago"></param>

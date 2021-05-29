@@ -73,7 +73,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="TrylogycWebsite.Common, Version=2021.1.5.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TrylogycWebsite.Common.2021.1.5.1\lib\netstandard2.0\TrylogycWebsite.Common.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\trylogyc.website.common.2021.5.25.1\lib\netstandard2.0\TrylogycWebsite.Common.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>

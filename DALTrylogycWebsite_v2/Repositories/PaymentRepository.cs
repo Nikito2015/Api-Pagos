@@ -144,7 +144,14 @@ namespace DataAccess.Repositories
 
                 Prmparametro3.ParameterName = "TransaccionComercioId";
                 Prmparametro3.SqlDbType = System.Data.SqlDbType.VarChar;
-                Prmparametro3.Value = TransaccionComercioId;
+                if (TransaccionComercioId == null)
+                {
+                    Prmparametro3.Value = DBNull.Value;
+                }
+                else {
+                    Prmparametro3.Value = TransaccionComercioId;
+                }
+                
 
                 Command.CommandType = CommandType.StoredProcedure;
                 Command.CommandText = "UPD_PAGOS";
@@ -182,7 +189,8 @@ namespace DataAccess.Repositories
         /// </summary>
         /// <param name="preference">The idPlataforma.</param>
         /// <param name="estado">The preference.</param>
-        /// <param name="estado">The preference.</param>
+        /// <param name="collection">The preference.</param>
+        /// <param name="merchantOrder">The preference.</param>
         /// <returns></returns>
         public IBaseDALResponse UpdatePaymentMP( string preference, Int32 estado , string  collection, string merchantOrder )
         {

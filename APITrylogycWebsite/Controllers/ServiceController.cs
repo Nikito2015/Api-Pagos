@@ -443,6 +443,53 @@ namespace APITrylogycWebsite.Controllers
 
             return response;
         }
+
+        [HttpPost]
+        [Route("UpdatePaymentMP")]
+        public UpdatePaymentResponse UpdatePaymentMP(UpdatePaymentMPRequest  request)
+        {
+            _log.Info("UpdatePaymentResponse() Comienzo...");
+            var response = new UpdatePaymentResponse();
+
+            if (!request.IsValid())
+                return (UpdatePaymentResponse)response.SetBadRequestResponse("Los datos proporcionados no son válidos.");
+
+            try
+            {
+                _log.Info("Inicializando BLLPago.");
+                IBLLPago bllPago = new BLLPago(_log, _connString, _configuration);
+                _log.Info($"Actualizando Pago MP: {request.preferenceId}.");
+                var bllResponse = bllPago.UpdatePaymentMP (request.preferenceId, request.estado, request.collection, request.merchantOrder);
+                _log.Info($"Respuesta de la capa de negocios: {bllResponse?.Status.ToString()}. Mensaje {bllResponse?.Message}");
+                if (bllResponse.Status.Equals(Status.Success))
+                {
+                    response.SetSuccessResponse(bllResponse.Message);
+                    response.pagoActualizado = true;
+                }
+                else
+                {
+                    response.SetBadRequestResponse(bllResponse.Message);
+                    response.pagoActualizado = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _log.Error($"Ocurrieron errores: {ex}");
+                response.SetErrorResponse(ex.Message);
+                Response.StatusCode = StatusCodes.Status400BadRequest;
+            }
+
+            finally
+            {
+                _log.Info("UpdatePaymentMPResponse() Fin...");
+            }
+
+            return response;
+        }
+
+
+
         [HttpPost]
         [Route("UpdateStatusPayment")]
         public UpdateStatusPaymentResponse UpdateStatusPayment(UpdateStatusPaymentRequest request)
