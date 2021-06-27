@@ -3,6 +3,7 @@ using BLLTrylogycWebsite.Models.Interfaces;
 using BLLTrylogycWebsite.Responses;
 using BLLTrylogycWebsite.Responses.Interfaces;
 using DALTrylogycWebsite.Repositories.Interfaces;
+using CommonTrylogycWebsite.DTO;
 using DataAccess.Repositories;
 using log4net;
 using Microsoft.Extensions.Configuration;
@@ -43,8 +44,9 @@ namespace BLLTrylogycWebsite.Models
         /// <param name="idSocio"></param>
         /// <param name="idConexion"></param>
         /// <param name="idMedioPago"></param>
+        /// <param name="facturas"></param>
         /// <returns></returns>
-        public IBLLResponseBase<int> RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago)
+        public IBLLResponseBase<int> RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago,List<TrylogycWebsite.Common.DTO.DTOFactura>  facturas )
         {
             _log.Info("RegisterPayment() Comienzo...");
             var bllRegisterPaymentResponse = new BLLResponseBase<int>();
@@ -52,7 +54,7 @@ namespace BLLTrylogycWebsite.Models
             try
             {
                 _log.Info($"Recuperando nroFactura {nroFactura}.");              
-                var RegisterPaymentDalResponse = _paymentRepository.RegisterPayment(nroFactura, importe, idSocio, idConexion, idMedioPago);
+                var RegisterPaymentDalResponse = _paymentRepository.RegisterPayment(nroFactura, importe, idSocio, idConexion, idMedioPago,facturas );
                 if (RegisterPaymentDalResponse.Succeeded)
                 {
                     if(RegisterPaymentDalResponse.Results.Tables?[0]?.Rows?.Count > 0)
@@ -199,6 +201,50 @@ namespace BLLTrylogycWebsite.Models
             }
 
             return bllUpdateStatusPaymentResponse;
+        }
+
+        /// <summary>
+        /// GetPago.
+        /// </summary>
+        /// <param name="idSocio"></param>
+        /// <param name="idConexion"></param>
+        /// <param name="numfact"></param>
+        /// <param name="Importe"></param>
+        /// <returns></returns>
+        public IBLLResponseBase<bool> GetPago(int idSocio, int idConexion, string numfact, decimal Importe)
+        {
+            _log.Info("GetPago() Comienzo...");
+            var bllPagoResponse = new BLLResponseBase<bool>();
+
+            try
+            {
+                _log.Info($"Recuperando pago {idSocio}.");
+                var pagoDalResponse = _paymentRepository.GetPago(idSocio,idConexion,numfact,Importe);
+                if (pagoDalResponse.Succeeded)
+                {
+                    // pagoDalResponse.Results.Tables[0].Rows[0].Field[0]
+
+                    //var paymentRow = pagoDalResponse.Results
+                    bllPagoResponse.DTOResult = (pagoDalResponse.Results.Tables[0].Rows.Count > 0 ? true : false);
+                    bllPagoResponse.Status = Status.Success;
+                    bllPagoResponse.Message = (pagoDalResponse.Results.Tables[0].Rows.Count > 0 ? "Existen pagos pendientes para la factura consultada." : "NO existen pagos pendientes para la factura consultada."); 
+                }
+                else
+                {
+                    _log.Info($"Ocurrieron errores al consultar pagos para: {idSocio}.");
+                    bllPagoResponse.Status = Enums.Status.Fail;
+                    bllPagoResponse.Message = "Ocurrieron errores al consultar pagos.";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _log.Error($"Ocurrieron errores al intentar consultar pagos para el socio {idSocio}. {ex.Message}");
+                bllPagoResponse.Status = Enums.Status.Fail;
+                bllPagoResponse.Message = $"Ocurrieron errores al intentar al actualizó el pago.";
+            }
+
+            return bllPagoResponse;
         }
     }
 }

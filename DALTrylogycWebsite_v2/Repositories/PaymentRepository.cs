@@ -4,6 +4,7 @@ using System.Data;
 using DALTrylogycWebsite.DALResponses;
 using DALTrylogycWebsite.DALResponses.Interfaces;
 using DALTrylogycWebsite.Repositories.Interfaces;
+using System.Collections.Generic;
 using log4net;
 
 namespace DataAccess.Repositories
@@ -41,12 +42,16 @@ namespace DataAccess.Repositories
         /// <param name="idConexion">The idConexion.</param>
         /// <param name="idMedioPago">The idMedioPago.</param>
         /// <returns></returns>
-        public IBaseDALResponse RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago)
+        public IBaseDALResponse RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago, List<TrylogycWebsite.Common.DTO.DTOFactura> facturas)
         {
             _log.Info("Register() Comienzo...");
             VerifyConnectionAndCommand();
+            
             var response = new BaseDALResponse();
             SqlDataAdapter dA = new SqlDataAdapter();
+            SqlTransaction sqlTran;
+            
+
 
             SqlParameter Prmparametro1 = new SqlParameter();
             SqlParameter Prmparametro2 = new SqlParameter();
@@ -54,6 +59,12 @@ namespace DataAccess.Repositories
             SqlParameter Prmparametro4 = new SqlParameter();
             SqlParameter Prmparametro5 = new SqlParameter();
             SqlParameter Prmparametro6 = new SqlParameter();
+
+           
+
+            Connection.Open();
+
+            sqlTran = Connection.BeginTransaction();    //Inicio transaccion
 
             try
             {
@@ -63,7 +74,7 @@ namespace DataAccess.Repositories
 
                 Prmparametro2.ParameterName = "numeroFactura";
                 Prmparametro2.SqlDbType = System.Data.SqlDbType.VarChar;
-                Prmparametro2.Value = nroFactura;
+                Prmparametro2.Value = "";
 
                 Prmparametro3.ParameterName = "importe";
                 Prmparametro3.SqlDbType = System.Data.SqlDbType.Decimal;
@@ -90,15 +101,77 @@ namespace DataAccess.Repositories
                 Command.Parameters.Add(Prmparametro5);
                 Command.Parameters.Add(Prmparametro6);
 
-                Connection.Open();
+             //   Connection.Open();
+                
+              //   sqlTran = Connection.BeginTransaction();    //Inicio transaccion
+
+                // Command.Transaction = sqlTran;                          //Enlazo transaccion con Cabecera
+                
+
                 //int insertedID = Convert.ToInt32(Command.ExecuteScalar());
-                dA.SelectCommand = Command;              
-                dA.Fill(response.Results);               
+                dA.SelectCommand = Command;
+                dA.SelectCommand.Transaction = sqlTran;
+                dA.Fill(response.Results);
+                //--GRABO DETALLEDE PAGOS
+
+
+                var paymentRow = response.Results.Tables[0].Rows[0];
+
+                int idPago = Convert.ToInt32(paymentRow.ItemArray[0]);
+                
+                foreach (var fact in facturas)
+                {
+                    SqlCommand commandDetalle = new SqlCommand();
+                    commandDetalle.Transaction = sqlTran;
+
+                    SqlParameter PrmParDet1 = new SqlParameter();
+                    SqlParameter PrmParDet2 = new SqlParameter();
+                    SqlParameter PrmParDet3 = new SqlParameter();
+                    SqlParameter PrmParDet4 = new SqlParameter();
+                    SqlParameter PrmParDet5 = new SqlParameter();
+
+                    PrmParDet1.ParameterName = "idPago";
+                    PrmParDet1.SqlDbType = System.Data.SqlDbType.Int;
+                    PrmParDet1.Value =idPago;
+
+                    PrmParDet2.ParameterName = "idSocio";
+                    PrmParDet2.SqlDbType = System.Data.SqlDbType.Int;
+                    PrmParDet2.Value = fact.IdSocio;
+
+                    PrmParDet3.ParameterName = "idConexion";
+                    PrmParDet3.SqlDbType = System.Data.SqlDbType.Int;
+                    PrmParDet3.Value = fact.IdConexion;
+
+                    PrmParDet4.ParameterName = "numeroFactura";
+                    PrmParDet4.SqlDbType = System.Data.SqlDbType.VarChar;
+                    PrmParDet4.Value = fact.NroFactura;
+                    
+                    PrmParDet5.ParameterName = "importeFactura";
+                    PrmParDet5.SqlDbType = System.Data.SqlDbType.Decimal;
+                    PrmParDet5.Value = fact.ImporteFactura;
+
+           
+
+                    commandDetalle.CommandType = CommandType.StoredProcedure;
+                    commandDetalle.CommandText = "INS_PAGOSDETALLE";
+                    commandDetalle.Parameters.Add(PrmParDet1);
+                    commandDetalle.Parameters.Add(PrmParDet2);
+                    commandDetalle.Parameters.Add(PrmParDet3);
+                    commandDetalle.Parameters.Add(PrmParDet4);
+                    commandDetalle.Parameters.Add(PrmParDet5);
+
+                    commandDetalle.Connection = Connection;
+                    int cantReg= commandDetalle.ExecuteNonQuery();
+
+                }
+                
+                sqlTran.Commit();
                 response.Succeeded = true;
             }
 
             catch (Exception ex)
             {
+                sqlTran.Rollback();
                 _log.Error($"Ocurrieron Errores. {ex.Message}");
                 response.FillErrorResponse(ex.HResult, ex.Message);
             }
@@ -151,7 +224,7 @@ namespace DataAccess.Repositories
                 else {
                     Prmparametro3.Value = TransaccionComercioId;
                 }
-                
+
 
                 Command.CommandType = CommandType.StoredProcedure;
                 Command.CommandText = "UPD_PAGOS";
@@ -192,7 +265,7 @@ namespace DataAccess.Repositories
         /// <param name="collection">The preference.</param>
         /// <param name="merchantOrder">The preference.</param>
         /// <returns></returns>
-        public IBaseDALResponse UpdatePaymentMP( string preference, Int32 estado , string  collection, string merchantOrder )
+        public IBaseDALResponse UpdatePaymentMP(string preference, Int32 estado, string collection, string merchantOrder)
         {
             _log.Info("UpdatePaymentMP() Comienzo...");
             VerifyConnectionAndCommand();
@@ -254,7 +327,7 @@ namespace DataAccess.Repositories
             return response;
         }
 
-      
+
         /// <summary>
         /// Updates Status Payments.
         /// </summary>
@@ -317,7 +390,77 @@ namespace DataAccess.Repositories
 
             return response;
         }
+
+        public IBaseDALResponse GetPago(int idSocio, int idConexion, string numFact, decimal importe)
+        {
+            _log.Info("GetPago() Comienzo...");
+            VerifyConnectionAndCommand();
+            var response = new BaseDALResponse();
+            SqlDataAdapter dA = new SqlDataAdapter();
+            SqlParameter Prmparametro1 = new SqlParameter();
+            SqlParameter Prmparametro2 = new SqlParameter();
+            SqlParameter Prmparametro3 = new SqlParameter();
+            SqlParameter Prmparametro4 = new SqlParameter();
+
+            try
+            {
+
+                Prmparametro1.ParameterName = "idSocio";
+                Prmparametro1.SqlDbType = System.Data.SqlDbType.Int;
+                Prmparametro1.Value = idSocio;
+
+
+                Prmparametro2.ParameterName = "idConexion";
+                Prmparametro2.SqlDbType = System.Data.SqlDbType.Int;
+                Prmparametro2.Value = idConexion;
+
+                Prmparametro3.ParameterName = "numFact";
+                Prmparametro3.SqlDbType = System.Data.SqlDbType.VarChar;
+                Prmparametro3.Value = numFact;
+
+
+                Prmparametro4.ParameterName = "importe";
+                Prmparametro4.SqlDbType = System.Data.SqlDbType.Money;
+                Prmparametro4.Value = importe;
+
+                Command.CommandType = CommandType.StoredProcedure;
+                Command.CommandText = "SEL_PAGOS";
+
+                Command.Parameters.Add(Prmparametro1);
+                Command.Parameters.Add(Prmparametro2);
+                Command.Parameters.Add(Prmparametro3);
+                Command.Parameters.Add(Prmparametro4);
+
+                Connection.Open();
+            
+                
+                dA.SelectCommand = Command;
+                dA.Fill(response.Results);
+                response.Succeeded = true;
+            }
+            catch (Exception ex)
+            {
+                _log.Error($"Ocurrieron Errores. {ex.Message}");
+                response.FillErrorResponse(ex.HResult, ex.Message);
+            }
+
+
+            finally
+            {
+                _log.Info("Disposing Data Adapter.");
+                dA.Dispose();
+                Command?.Dispose();
+                Command = null;
+                _log.Info("Closing connection.");
+                Connection?.Close();
+                _log.Error($"GetPago() Fin.");
+            }
+
+            return response;
+
+        }
+
         #endregion
     }
-}
+    }
 

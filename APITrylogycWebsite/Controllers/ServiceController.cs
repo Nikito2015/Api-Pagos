@@ -6,6 +6,7 @@ using BLLTrylogycWebsite.Enums;
 using BLLTrylogycWebsite.Models;
 using BLLTrylogycWebsite.Models.Interfaces;
 using CommonTrylogycWebsite.Models;
+using CommonTrylogycWebsite.DTO;
 using CommonTrylogycWebsite.ServiceRequests;
 using CommonTrylogycWebsite.ServiceResponses;
 using Microsoft.AspNetCore.Http;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using TrylogycWebsite.Common.ServiceRequests;
 using TrylogycWebsite.Common.ServiceResponses;
+using TrylogycWebsite.Common.DTO;
 
 namespace APITrylogycWebsite.Controllers
 {
@@ -365,6 +367,10 @@ namespace APITrylogycWebsite.Controllers
             _log.Info("RegisterPaymentResponse() Comienzo...");
             var response = new RegisterPaymentResponse();
 
+            //  List<DTOFactura> varFacturas = new List<TrylogycWebsite.Common.DTO.DTOFactura>();
+
+            List<DTOFactura> varFacturas = request.Facturas; 
+          
             if (!request.IsValid())
                 return (RegisterPaymentResponse)response.SetBadRequestResponse("Los datos proporcionados no son válidos.");
 
@@ -373,7 +379,7 @@ namespace APITrylogycWebsite.Controllers
                 _log.Info("Inicializando BLLPago.");
                 IBLLPago bllPago = new BLLPago(_log, _connString, _configuration);
                 _log.Info($"Registrando Factura: {request.nroFactura}.");
-                var bllResponse = bllPago.RegisterPayment(request.nroFactura, request.importe, request.idSocio, request.idConexion, request.idMedioPago);
+                var bllResponse = bllPago.RegisterPayment(request.nroFactura, request.importe, 0, 0, request.idMedioPago, varFacturas);
                 _log.Info($"Respuesta de la capa de negocios: {bllResponse?.Status.ToString()}. Mensaje {bllResponse?.Message}");
                 if (bllResponse.Status.Equals(Status.Success))
                 {
@@ -531,6 +537,47 @@ namespace APITrylogycWebsite.Controllers
                 _log.Info("UpdateStatusPaymentResponse() Fin...");
             }
 
+            return response;
+        }
+
+
+        [HttpPost]
+        [Route("GetPago")]
+        public PagoResponse  GetPago(PagoRequest request)
+        {
+            _log.Info("GetPago() Comienzo...");
+            var response = new PagoResponse();
+
+            if (!request.IsValid())
+                return (PagoResponse)response.SetBadRequestResponse("Los datos proporcionados no son válidos.");
+
+            try
+            {
+                IBLLPago bLLPago = new BLLPago(_log, _connString, _configuration);
+                var bllResponse = bLLPago.GetPago(request.idSocio, request.idConexion, request.numFact, request.importe);
+                if (bllResponse.Status.Equals(Status.Success))
+                {
+                    response.tienePagos = bllResponse.DTOResult ? true : false;
+                    response.SetSuccessResponse(null);
+                }
+                else
+                {
+                    response.tienePagos = false;
+                    response.SetBadRequestResponse(bllResponse.Message);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _log.Error($"Ocurrieron errores: {ex}");
+                response.SetErrorResponse(ex.Message);
+                Response.StatusCode = StatusCodes.Status400BadRequest;
+            }
+
+            finally
+            {
+                _log.Info("GetPago() Fin...");
+            }
             return response;
         }
 

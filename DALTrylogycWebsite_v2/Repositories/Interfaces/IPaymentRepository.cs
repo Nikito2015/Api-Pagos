@@ -17,7 +17,7 @@ namespace DALTrylogycWebsite.Repositories.Interfaces
         /// <param name="idConexion">The idConexion.</param>
         /// <param name="idMedioPago">The idMedioPago.</param>
         /// <returns></returns>
-        IBaseDALResponse RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago);
+        IBaseDALResponse RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago, System.Collections.Generic.List<TrylogycWebsite.Common.DTO.DTOFactura> facturas);
         /// <summary>
         /// UpdatePayment.
         /// </summary>
@@ -43,6 +43,16 @@ namespace DALTrylogycWebsite.Repositories.Interfaces
         /// <param name="estadoPago"></param>
         /// <returns></returns>
         IBaseDALResponse UpdateStatusPayment(int idPago, string transaccionPlataformaId, int estadoPago);
+        /// <summary>
+        /// Updates Status Payments.
+        /// </summary>
+        /// <param name="idSocio"></param>
+        /// <param name="idConexion"></param>
+        /// <param name="numFact"></param>
+        /// <param name="importe"></param>
+        /// <returns></returns>
+         IBaseDALResponse GetPago(int idSocio, int idConexion, string numFact, decimal importe);
         #endregion
+
     }
 }

@@ -18,7 +18,7 @@ namespace BLLTrylogycWebsite.Models.Interfaces
         /// <param name="idConexion"></param>
         /// <param name="idMedioPago"></param>
         /// <returns></returns>
-        IBLLResponseBase<int> RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago);
+        IBLLResponseBase<int> RegisterPayment(string nroFactura, decimal importe, int idSocio, int idConexion, int idMedioPago, List<TrylogycWebsite.Common.DTO.DTOFactura> facturas);
         /// <summary>
         /// UpdatePayment.
         /// </summary>
@@ -44,6 +44,15 @@ namespace BLLTrylogycWebsite.Models.Interfaces
         /// <param name="estadoPago"></param>
         /// <returns></returns>
         IBLLResponseBase<bool> UpdateStatusPayment(int idPago, string transaccionPlataformaId, int estadoPago);
+        /// <summary>
+        /// GetPago.
+        /// </summary>
+        /// <param name="idSocio"></param>
+        /// <param name="idConexion"></param>
+        /// <param name="numfact"></param>
+        /// <param name="Importe"></param>
+        /// <returns></returns>
+        IBLLResponseBase<bool> GetPago(int idSocio, int idConexion, string numfact, decimal Importe);
         #endregion
     }
 }
