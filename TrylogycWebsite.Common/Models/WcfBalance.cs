@@ -50,6 +50,11 @@ namespace CommonTrylogycWebsite.Models
 
 
         public bool Paid { get; set; }
+
+
+        public string CodigoBarra { get; set; }
+
+
         #endregion
 
         #region Public Methods
@@ -75,7 +80,8 @@ namespace CommonTrylogycWebsite.Models
                                InvoicePoint = a.InvoicePoint,
                                InvoiceTrackingNumber = a.InvoiceTrackingNumber,
                                Paid = a.Paid,
-                               Period = a.Period
+                               Period = a.Period,
+                               CodigoBarra = a.codigoBarra
                            })?.ToList();
         }
         #endregion

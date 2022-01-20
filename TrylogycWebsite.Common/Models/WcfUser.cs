@@ -163,7 +163,8 @@ namespace CommonTrylogycWebsite.Models
                                InvoicePoint = a.InvoicePoint,
                                InvoiceTrackingNumber = a.InvoiceTrackingNumber,
                                Paid = a.Paid,
-                               Period = a.Period
+                               Period = a.Period,
+                               CodigoBarra= a.codigoBarra
                            })?.ToList(),
                 Associates = dtoUser.Associates?
                              .Select(a => new WcfAssociate()

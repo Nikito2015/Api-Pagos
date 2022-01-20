@@ -21,5 +21,6 @@ namespace CommonTrylogycWebsite.DTO
         public string InvoiceAmmount {get;set; }
         public string InvoiceTrackingNumber {get;set; }
         public bool Paid {get;set; }
+        public string codigoBarra { get; set; }
     }
 }

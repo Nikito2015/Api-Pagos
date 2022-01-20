@@ -108,6 +108,14 @@ namespace CommonTrylogycWebsite.DTO.Interfaces
         ///   <c>true</c> if paid; otherwise, <c>false</c>.
         /// </value>
         bool Paid { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Cdodigo Barras
+        /// </summary>
+        /// <value>
+        /// The invoice ammount.
+        /// </value>
+        string codigoBarra { get; set; }
         #endregion
     }
 }

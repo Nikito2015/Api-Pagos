@@ -37,7 +37,8 @@ namespace CommonTrylogycWebsite.DTO.Extensions
                            InvoiceDate = row.Field<string>("Fecha_Emision"),
                            InvoiceExpirationDate = row.Field<string>("Fecha_Vto"),
                            InvoiceAmmount = row.Field<string>("Importe"),
-                           Paid = Convert.ToBoolean(Convert.ToInt32(row.Field<string>("Pagada")))
+                           Paid = Convert.ToBoolean(Convert.ToInt32(row.Field<string>("Pagada"))),
+                           codigoBarra = row.Field<string>("codigoBarra")
                        };
             return balances;
         }
