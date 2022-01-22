@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XKd9AFC8OGYq4AhEOgouOdzLTYOii7WkV0zi/2Kc6y/0wj9fIFLu3NzkcMAK7N43BqZ9kEJrmxS3E97P8lVFIg==",
+  "dgSpecHash": "NU92iOz8cdVQQBWeActhGtXoogxFaW4yqNWoDcshIY0CXFtwdJ2Ecde3m7NKANNRXylf7Ib61At/k8l2PWRASQ==",
   "success": true,
-  "projectFilePath": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
+  "projectFilePath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mricci\\.nuget\\packages\\microsoft.netcore.jit\\1.0.2\\microsoft.netcore.jit.1.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

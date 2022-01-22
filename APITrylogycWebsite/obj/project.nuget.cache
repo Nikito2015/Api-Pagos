@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ecckhmySZftPqcFG7zOUT8ZG3dryjlzn7WXCvdqVfn61yi48UJXc6hG0ave5IMC/X0iLfKvuCul9xHqoGA+tfA==",
+  "dgSpecHash": "LJGWceyYRleXl9aKd5bFzlcoplvilcM1zRQxpm20XoE6k2wwJcXxhiwXWRIo9spZbPtH5nZTB+AXcZ4ZJjTSmw==",
   "success": true,
-  "projectFilePath": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+  "projectFilePath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mricci\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
     "C:\\Users\\mricci\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

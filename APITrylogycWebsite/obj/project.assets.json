@@ -2441,11 +2441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+      "projectUniqueName": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
       "projectName": "APITrylogycWebsite",
-      "projectPath": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+      "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
       "packagesPath": "C:\\Users\\mricci\\.nuget\\packages\\",
-      "outputPath": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\APITrylogycWebsite\\obj\\",
+      "outputPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -2467,8 +2467,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
-              "projectPath": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
+            "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
+              "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
             }
           }
         }

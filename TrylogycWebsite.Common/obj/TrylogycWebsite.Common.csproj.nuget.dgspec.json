@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {}
+    "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {}
   },
   "projects": {
-    "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {
+    "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {
       "version": "2021.12.24.1",
       "restore": {
-        "projectUniqueName": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
+        "projectUniqueName": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
         "projectName": "Trylogyc.Website.Common",
-        "projectPath": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
+        "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
         "packagesPath": "C:\\Users\\mricci\\.nuget\\packages\\",
-        "outputPath": "c:\\Desarrollo\\Net\\trylogyc\\ApiTrylogycWebSite2\\TrylogycWebsite.Common\\obj\\",
+        "outputPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\TrylogycWebsite.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
