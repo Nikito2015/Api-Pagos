@@ -1,0 +1,9 @@
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\bin\Release\netstandard2.0\TrylogycWebsite.Common.deps.json
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\bin\Release\netstandard2.0\TrylogycWebsite.Common.dll
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\bin\Release\netstandard2.0\TrylogycWebsite.Common.pdb
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\obj\Release\netstandard2.0\TrylogycWebsite.Common.csprojAssemblyReference.cache
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\obj\Release\netstandard2.0\TrylogycWebsite.Common.AssemblyInfoInputs.cache
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\obj\Release\netstandard2.0\TrylogycWebsite.Common.AssemblyInfo.cs
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\obj\Release\netstandard2.0\TrylogycWebsite.Common.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\obj\Release\netstandard2.0\TrylogycWebsite.Common.dll
+C:\Desarrollo\Net\trylogyc\ApiTrylogycWebSite2\TrylogycWebsite.Common\obj\Release\netstandard2.0\TrylogycWebsite.Common.pdb
