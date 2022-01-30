@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {}
+    "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {
+    "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+        "projectUniqueName": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
         "projectName": "APITrylogycWebsite",
-        "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+        "projectPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
         "packagesPath": "C:\\Users\\mricci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\obj\\",
+        "outputPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -33,8 +33,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
-                "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
+              "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
+                "projectPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
               }
             }
           }
@@ -94,16 +94,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj",
-        "projectName": "BLLTrylogycWebsite",
-        "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
-      },
-      "frameworks": {
-        "net461": {}
       }
     }
   }

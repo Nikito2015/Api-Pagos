@@ -579,15 +579,6 @@
         "runtime": {
           "lib/netstandard2.0/TrylogycWebsite.Common.dll": {}
         }
-      },
-      "BLLTrylogycWebsite/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/BLLTrylogycWebsite.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BLLTrylogycWebsite.dll": {}
-        }
       }
     }
   },
@@ -2415,16 +2406,11 @@
         "trylogyc.website.common.2021.12.24.1.nupkg.sha512",
         "trylogyc.website.common.nuspec"
       ]
-    },
-    "BLLTrylogycWebsite/1.0.0": {
-      "type": "project",
-      "path": "../BLLTrylogycWebsite/BLLTrylogycWebsite.csproj",
-      "msbuildProject": "../BLLTrylogycWebsite/BLLTrylogycWebsite.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "BLLTrylogycWebsite >= 1.0.0",
+      "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj",
       "Newtonsoft.Json >= 12.0.3",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "System.Configuration.ConfigurationManager >= 5.0.0-rc.2.20475.5",
@@ -2441,11 +2427,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+      "projectUniqueName": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
       "projectName": "APITrylogycWebsite",
-      "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+      "projectPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
       "packagesPath": "C:\\Users\\mricci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\obj\\",
+      "outputPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -2467,8 +2453,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
-              "projectPath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
+            "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
+              "projectPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
             }
           }
         }
@@ -2529,5 +2515,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "No se encuentra información del proyecto para \"C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj\". Si está usando Visual Studio, puede deberse a que el proyecto no se haya cargado o no forme parte de la solución actual, por lo que debe ejecutar una restauración desde la línea de comandos. De lo contrario, puede que el archivo del proyecto no sea válido o que falten destinos necesarios para la restauración.",
+      "libraryId": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

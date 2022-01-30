@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LJGWceyYRleXl9aKd5bFzlcoplvilcM1zRQxpm20XoE6k2wwJcXxhiwXWRIo9spZbPtH5nZTB+AXcZ4ZJjTSmw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\mricci\\Source\\Repos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+  "dgSpecHash": "TiJzv//yqDoBklTsiI4LVT5qh99cmaZdjNbPl6qMZXcmb6wF84TPZeS/o2Etq/csD7w/MNvKImap4XucbS4S0A==",
+  "success": false,
+  "projectFilePath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mricci\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
     "C:\\Users\\mricci\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
@@ -49,5 +49,15 @@
     "C:\\Users\\mricci\\.nuget\\packages\\system.windows.extensions\\5.0.0-rc.2.20475.5\\system.windows.extensions.5.0.0-rc.2.20475.5.nupkg.sha512",
     "C:\\Users\\mricci\\.nuget\\packages\\trylogyc.website.common\\2021.12.24.1\\trylogyc.website.common.2021.12.24.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "No se encuentra información del proyecto para \"C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj\". Si está usando Visual Studio, puede deberse a que el proyecto no se haya cargado o no forme parte de la solución actual, por lo que debe ejecutar una restauración desde la línea de comandos. De lo contrario, puede que el archivo del proyecto no sea válido o que falten destinos necesarios para la restauración.",
+      "libraryId": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
