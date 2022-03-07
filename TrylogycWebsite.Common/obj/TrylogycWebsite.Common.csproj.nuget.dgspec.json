@@ -1,32 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {}
+    "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {}
   },
   "projects": {
-    "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {
+    "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj": {
       "version": "2021.12.24.1",
       "restore": {
-        "projectUniqueName": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
+        "projectUniqueName": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
         "projectName": "Trylogyc.Website.Common",
-        "projectPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
-        "packagesPath": "C:\\Users\\mricci\\.nuget\\packages\\",
-        "outputPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\TrylogycWebsite.Common\\obj\\",
+        "projectPath": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\TrylogycWebsite.Common\\TrylogycWebsite.Common.csproj",
+        "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\TrylogycWebsite.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mricci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +84,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

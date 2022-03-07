@@ -1,40 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {}
+    "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {}
   },
   "projects": {
-    "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {
+    "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+        "projectUniqueName": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
         "projectName": "APITrylogycWebsite",
-        "projectPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
-        "packagesPath": "C:\\Users\\mricci\\.nuget\\packages\\",
-        "outputPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\APITrylogycWebsite\\obj\\",
+        "projectPath": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\APITrylogycWebsite\\APITrylogycWebsite.csproj",
+        "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\APITrylogycWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mricci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
-                "projectPath": "C:\\Desarrollo\\Net\\trylogyc\\Pagina-Pagos\\Api\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
+              "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
+                "projectPath": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj"
               }
             }
           }
@@ -92,8 +94,23 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj",
+        "projectName": "BLLTrylogycWebsite",
+        "projectPath": "C:\\Fuentes\\Trylogyc\\VBNET\\SitioWebPagos\\Api-Pagos\\BLLTrylogycWebsite\\BLLTrylogycWebsite.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
       }
     }
   }

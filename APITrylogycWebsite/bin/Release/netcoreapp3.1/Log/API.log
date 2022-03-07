@@ -3687,3 +3687,748 @@
 2022-01-20 07:21:53 [INFO ] [14] DataAccess.Repositories.PaymentRepository.GetPago: Closing connection.
 2022-01-20 07:21:53 [ERROR] [14] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Fin.
 2022-01-20 07:21:53 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Fin...
+2022-02-03 16:23:09 [INFO ] [17] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-03 16:23:10 [ERROR] [17] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:23:10 [INFO ] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:23:10 [ERROR] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-03 16:23:10 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:23:11 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-03 16:23:11 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:23:11 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:23:11 [INFO ] [17] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-03 16:23:12 [INFO ] [17] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:23:12 [INFO ] [17] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:23:12 [INFO ] [17] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:23:12 [INFO ] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:23:12 [INFO ] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:23:12 [INFO ] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:23:12 [ERROR] [17] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:23:12 [INFO ] [17] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:23:12 [INFO ] [17] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-03 16:23:12 [INFO ] [18] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: GetUserBalances() Comienzo...
+2022-02-03 16:23:12 [INFO ] [18] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:23:12 [INFO ] [18] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: GetUserAssociates() Comienzo...
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:23:12 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:23:12 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:23:12 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:23:12 [ERROR] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando path de la dll en ejecución.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Estableciendo filtro para conexiones.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando lista de saldos.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-03 16:23:12 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:23:12 [INFO ] [18] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: Login() Fin...
+2022-02-03 16:24:01 [INFO ] [23] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:24:01 [INFO ] [23] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:24:01 [INFO ] [23] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:24:01 [INFO ] [23] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:24:01 [INFO ] [23] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:24:01 [INFO ] [23] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:24:01 [ERROR] [23] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:24:01 [INFO ] [23] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:24:02 [INFO ] [23] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-03 16:24:02 [INFO ] [20] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Comienzo...
+2022-02-03 16:24:02 [INFO ] [20] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:24:02 [INFO ] [20] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:24:02 [INFO ] [20] BLLTrylogycWebsite.Models.BLLPago.GetPago: GetPago() Comienzo...
+2022-02-03 16:24:02 [INFO ] [20] BLLTrylogycWebsite.Models.BLLPago.GetPago: Recuperando pago 74.
+2022-02-03 16:24:02 [INFO ] [20] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Comienzo...
+2022-02-03 16:24:02 [INFO ] [20] DataAccess.Repositories.PaymentRepository.GetPago: Disposing Data Adapter.
+2022-02-03 16:24:02 [INFO ] [20] DataAccess.Repositories.PaymentRepository.GetPago: Closing connection.
+2022-02-03 16:24:02 [ERROR] [20] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Fin.
+2022-02-03 16:24:02 [INFO ] [20] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Fin...
+2022-02-03 16:25:33 [INFO ] [24] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:25:33 [INFO ] [24] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:25:33 [INFO ] [24] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:25:33 [INFO ] [24] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:25:33 [INFO ] [24] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:25:33 [INFO ] [24] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:25:33 [ERROR] [24] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:25:33 [INFO ] [24] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:25:33 [INFO ] [24] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-03 16:25:33 [INFO ] [26] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: GetUserBalances() Comienzo...
+2022-02-03 16:25:33 [INFO ] [26] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:25:33 [INFO ] [26] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: GetUserAssociates() Comienzo...
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:25:33 [INFO ] [26] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:25:33 [INFO ] [26] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:25:33 [INFO ] [26] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:25:33 [ERROR] [26] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando path de la dll en ejecución.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Estableciendo filtro para conexiones.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando lista de saldos.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-03 16:25:33 [INFO ] [26] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:25:33 [INFO ] [26] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: Login() Fin...
+2022-02-03 16:25:38 [INFO ] [27] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:25:38 [ERROR] [27] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:25:38 [INFO ] [27] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-03 16:25:38 [INFO ] [27] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLPago.GetPago: GetPago() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] BLLTrylogycWebsite.Models.BLLPago.GetPago: Recuperando pago 74.
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Comienzo...
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.PaymentRepository.GetPago: Disposing Data Adapter.
+2022-02-03 16:25:38 [INFO ] [27] DataAccess.Repositories.PaymentRepository.GetPago: Closing connection.
+2022-02-03 16:25:38 [ERROR] [27] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Fin.
+2022-02-03 16:25:38 [INFO ] [27] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Fin...
+2022-02-03 16:27:00 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-03 16:27:00 [ERROR] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:27:00 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:27:00 [ERROR] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:27:00 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:27:00 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-03 16:27:11 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:27:11 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:27:11 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:27:11 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:27:11 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:27:11 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:27:11 [ERROR] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:27:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:27:11 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-03 16:27:12 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: GetUserBalances() Comienzo...
+2022-02-03 16:27:12 [INFO ] [10] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:27:12 [INFO ] [10] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: GetUserAssociates() Comienzo...
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:27:12 [INFO ] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:27:12 [INFO ] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:27:12 [INFO ] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:27:12 [ERROR] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando path de la dll en ejecución.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Estableciendo filtro para conexiones.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando lista de saldos.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-03 16:27:12 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:27:12 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: Login() Fin...
+2022-02-03 16:27:25 [INFO ] [22] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:27:25 [INFO ] [22] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:27:25 [INFO ] [22] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-03 16:27:25 [INFO ] [22] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-03 16:27:25 [INFO ] [22] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-03 16:27:25 [INFO ] [22] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-03 16:27:25 [ERROR] [22] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-03 16:27:25 [INFO ] [22] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-03 16:27:25 [INFO ] [22] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-03 16:27:25 [INFO ] [20] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Comienzo...
+2022-02-03 16:27:25 [INFO ] [20] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-03 16:27:25 [INFO ] [20] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-03 16:27:25 [INFO ] [20] BLLTrylogycWebsite.Models.BLLPago.GetPago: GetPago() Comienzo...
+2022-02-03 16:27:25 [INFO ] [20] BLLTrylogycWebsite.Models.BLLPago.GetPago: Recuperando pago 131.
+2022-02-03 16:27:25 [INFO ] [20] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Comienzo...
+2022-02-03 16:27:25 [INFO ] [20] DataAccess.Repositories.PaymentRepository.GetPago: Disposing Data Adapter.
+2022-02-03 16:27:25 [INFO ] [20] DataAccess.Repositories.PaymentRepository.GetPago: Closing connection.
+2022-02-03 16:27:25 [ERROR] [20] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Fin.
+2022-02-03 16:27:25 [INFO ] [20] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Fin...
+2022-02-21 18:07:05 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-21 18:07:05 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:07:05 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:07:05 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-21 18:07:05 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-21 18:07:05 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-21 18:07:06 [ERROR] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-21 18:07:06 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-21 18:07:06 [ERROR] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-21 18:07:06 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:07:07 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-21 18:07:11 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-21 18:07:11 [INFO ] [10] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:07:11 [INFO ] [10] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-21 18:07:11 [INFO ] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-21 18:07:11 [INFO ] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-21 18:07:11 [INFO ] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-21 18:07:11 [ERROR] [10] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-21 18:07:11 [INFO ] [10] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:07:11 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-21 18:07:11 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: GetUserBalances() Comienzo...
+2022-02-21 18:07:11 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:07:11 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: GetUserAssociates() Comienzo...
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-21 18:07:11 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-21 18:07:11 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-21 18:07:11 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-21 18:07:11 [ERROR] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando path de la dll en ejecución.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Estableciendo filtro para conexiones.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando lista de saldos.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-21 18:07:11 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:07:11 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: Login() Fin...
+2022-02-21 18:10:15 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-21 18:10:16 [ERROR] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-21 18:10:16 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-21 18:10:16 [ERROR] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-21 18:10:16 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:10:17 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-21 18:13:58 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:13:59 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-21 18:13:59 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-21 18:13:59 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-21 18:13:59 [ERROR] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-21 18:13:59 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-21 18:13:59 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-21 18:13:59 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Contraseña errónea
+2022-02-21 18:13:59 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-21 18:14:09 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-21 18:14:09 [ERROR] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-21 18:14:09 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-21 18:14:09 [ERROR] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-21 18:14:09 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:14:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-21 18:14:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-21 18:14:11 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:14:12 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-21 18:17:45 [INFO ] [8] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-21 18:17:45 [ERROR] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-21 18:17:45 [INFO ] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-21 18:17:45 [ERROR] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-21 18:17:45 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:17:46 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-21 18:17:46 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-21 18:17:46 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:17:47 [ERROR] [8] APITrylogycWebsite.Controllers.ServiceController.Login: Ocurrieron errores: System.ArgumentException: Column 'codigoBarra' does not belong to table Registro.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at System.Data.DataRowExtensions.Field[T](DataRow row, String columnName)
+   at CommonTrylogycWebsite.DTO.Extensions.DTOBalanceExtensions.<>c.<PopulateBalancesCollectionFromDataTable>b__0_0(DataRow row)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CommonTrylogycWebsite.Models.WcfUser.CreateFromDTO(IDTOUser dtoUser)
+   at APITrylogycWebsite.Controllers.ServiceController.Login(LoginRequest request) in C:\Fuentes\Trylogyc\VBNET\SitioWebPagos\Api-Pagos\APITrylogycWebsite\Controllers\ServiceController.cs:line 55
+2022-02-21 18:17:47 [INFO ] [8] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-21 18:34:22 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mricci.
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-21 18:34:23 [ERROR] [13] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-21 18:34:23 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-21 18:34:23 [ERROR] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-21 18:34:23 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:34:24 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-21 18:34:24 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-21 18:34:24 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-21 18:34:24 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-22 16:28:15 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mivancich@trylogyc.com.ar.
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-22 16:28:15 [ERROR] [14] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:28:15 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:28:15 [ERROR] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-22 16:28:15 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:28:17 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-22 16:28:17 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-22 16:28:17 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:28:18 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-22 16:28:22 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:28:22 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:22 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:28:22 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:28:22 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:28:22 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:28:22 [ERROR] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-22 16:28:22 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:28:22 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-22 16:28:22 [INFO ] [16] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: GetUserBalances() Comienzo...
+2022-02-22 16:28:22 [INFO ] [16] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:22 [INFO ] [16] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: GetUserAssociates() Comienzo...
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:28:22 [INFO ] [16] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:28:22 [INFO ] [16] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:28:22 [INFO ] [16] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:28:22 [ERROR] [16] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando path de la dll en ejecución.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Estableciendo filtro para conexiones.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando lista de saldos.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-22 16:28:22 [INFO ] [16] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:28:24 [INFO ] [16] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: Login() Fin...
+2022-02-22 16:28:44 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:28:44 [ERROR] [13] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:28:44 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-22 16:28:44 [INFO ] [16] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Comienzo...
+2022-02-22 16:28:44 [INFO ] [16] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:44 [INFO ] [16] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:44 [INFO ] [16] BLLTrylogycWebsite.Models.BLLPago.GetPago: GetPago() Comienzo...
+2022-02-22 16:28:44 [INFO ] [16] BLLTrylogycWebsite.Models.BLLPago.GetPago: Recuperando pago 1.
+2022-02-22 16:28:44 [INFO ] [16] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Comienzo...
+2022-02-22 16:28:44 [INFO ] [16] DataAccess.Repositories.PaymentRepository.GetPago: Disposing Data Adapter.
+2022-02-22 16:28:44 [INFO ] [16] DataAccess.Repositories.PaymentRepository.GetPago: Closing connection.
+2022-02-22 16:28:44 [ERROR] [16] DataAccess.Repositories.PaymentRepository.GetPago: GetPago() Fin.
+2022-02-22 16:28:44 [INFO ] [16] APITrylogycWebsite.Controllers.ServiceController.GetPago: GetPago() Fin...
+2022-02-22 16:28:44 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.RegisterPayment: RegisterPaymentResponse() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.RegisterPayment: Inicializando BLLPago.
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:44 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.RegisterPayment: Registrando Factura: .
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLPago.RegisterPayment: RegisterPayment() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLPago.RegisterPayment: Recuperando nroFactura .
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.PaymentRepository.RegisterPayment: Register() Comienzo...
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.PaymentRepository.RegisterPayment: Disposing Data Adapter.
+2022-02-22 16:28:44 [INFO ] [13] DataAccess.Repositories.PaymentRepository.RegisterPayment: Closing connection.
+2022-02-22 16:28:44 [ERROR] [13] DataAccess.Repositories.PaymentRepository.RegisterPayment: Register() Fin.
+2022-02-22 16:28:44 [INFO ] [13] BLLTrylogycWebsite.Models.BLLPago.RegisterPayment: Convirtiendo dataset a DTO.
+2022-02-22 16:28:44 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.RegisterPayment: Respuesta de la capa de negocios: Success. Mensaje Se registró el pago correctamente.
+2022-02-22 16:28:44 [INFO ] [13] APITrylogycWebsite.Controllers.ServiceController.RegisterPayment: RegisterPaymentResponse() Fin...
+2022-02-22 16:28:46 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.UpdatePayment: UpdatePaymentResponse() Comienzo...
+2022-02-22 16:28:46 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.UpdatePayment: Inicializando BLLPago.
+2022-02-22 16:28:46 [INFO ] [10] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:46 [INFO ] [10] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:46 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.UpdatePayment: Actualizando Pago: 2.
+2022-02-22 16:28:46 [INFO ] [10] BLLTrylogycWebsite.Models.BLLPago.UpdatePayment: UpdatePayment() Comienzo...
+2022-02-22 16:28:46 [INFO ] [10] BLLTrylogycWebsite.Models.BLLPago.UpdatePayment: Recuperando preference 229476782-630f10a6-f897-490a-8d7c-49e7abbdf2fa.
+2022-02-22 16:28:46 [INFO ] [10] DataAccess.Repositories.PaymentRepository.UpdatePayment: Update() Comienzo...
+2022-02-22 16:28:46 [INFO ] [10] DataAccess.Repositories.PaymentRepository.UpdatePayment: Disposing Data Adapter.
+2022-02-22 16:28:46 [INFO ] [10] DataAccess.Repositories.PaymentRepository.UpdatePayment: Closing connection.
+2022-02-22 16:28:46 [ERROR] [10] DataAccess.Repositories.PaymentRepository.UpdatePayment: Update() Fin.
+2022-02-22 16:28:46 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.UpdatePayment: Respuesta de la capa de negocios: Success. Mensaje Se actualizó el pago correctamente.
+2022-02-22 16:28:46 [INFO ] [10] APITrylogycWebsite.Controllers.ServiceController.UpdatePayment: UpdatePaymentResponse() Fin...
+2022-02-22 16:28:58 [INFO ] [6] APITrylogycWebsite.Controllers.ServiceController.UpdatePaymentMP: UpdatePaymentResponse() Comienzo...
+2022-02-22 16:28:58 [INFO ] [6] APITrylogycWebsite.Controllers.ServiceController.UpdatePaymentMP: Inicializando BLLPago.
+2022-02-22 16:28:58 [INFO ] [6] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:28:58 [INFO ] [6] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:28:58 [INFO ] [6] APITrylogycWebsite.Controllers.ServiceController.UpdatePaymentMP: Actualizando Pago MP: 229476782-630f10a6-f897-490a-8d7c-49e7abbdf2fa.
+2022-02-22 16:28:58 [INFO ] [6] BLLTrylogycWebsite.Models.BLLPago.UpdatePaymentMP: UpdatePaymentMP() Comienzo...
+2022-02-22 16:28:58 [INFO ] [6] BLLTrylogycWebsite.Models.BLLPago.UpdatePaymentMP: Recuperando preference 229476782-630f10a6-f897-490a-8d7c-49e7abbdf2fa.
+2022-02-22 16:28:58 [INFO ] [6] DataAccess.Repositories.PaymentRepository.UpdatePaymentMP: UpdatePaymentMP() Comienzo...
+2022-02-22 16:28:58 [INFO ] [6] DataAccess.Repositories.PaymentRepository.UpdatePaymentMP: Disposing Data Adapter.
+2022-02-22 16:28:58 [INFO ] [6] DataAccess.Repositories.PaymentRepository.UpdatePaymentMP: Closing connection.
+2022-02-22 16:28:58 [ERROR] [6] DataAccess.Repositories.PaymentRepository.UpdatePaymentMP: Update() Fin.
+2022-02-22 16:28:58 [INFO ] [6] APITrylogycWebsite.Controllers.ServiceController.UpdatePaymentMP: Respuesta de la capa de negocios: Success. Mensaje Se actualizó el pago correctamente.
+2022-02-22 16:28:58 [INFO ] [6] APITrylogycWebsite.Controllers.ServiceController.UpdatePaymentMP: UpdatePaymentMPResponse() Fin...
+2022-02-22 16:29:01 [INFO ] [18] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:29:01 [ERROR] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:29:01 [INFO ] [18] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-22 16:29:01 [INFO ] [18] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: GetUserBalances() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: GetUserAssociates() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:29:01 [INFO ] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:29:01 [ERROR] [18] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando path de la dll en ejecución.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Estableciendo filtro para conexiones.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando lista de saldos.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-22 16:29:01 [INFO ] [18] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:29:03 [INFO ] [18] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: Login() Fin...
+2022-02-22 16:33:24 [INFO ] [8] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Comienzo...
+2022-02-22 16:33:27 [INFO ] [8] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:33:28 [INFO ] [8] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:33:29 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: GetUserByName() Comienzo...
+2022-02-22 16:33:29 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando usuario mivancich@trylogyc.com.ar.
+2022-02-22 16:33:29 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Comienzo...
+2022-02-22 16:33:30 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Opening SQL Connection.
+2022-02-22 16:33:32 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Setting SQL Command to SEL_USUARIO_CGP
+2022-02-22 16:33:32 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Filling dataset.
+2022-02-22 16:33:32 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Disposing Data Adapter.
+2022-02-22 16:33:32 [INFO ] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: Closing connection.
+2022-02-22 16:33:32 [ERROR] [8] DataAccess.Repositories.UserRepository.GetUserByEmail: GetUserByEmail() Fin.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Usuario recuperado.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Convirtiendo dataset a DTO.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Conversión a DTO exitosa.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:33:32 [INFO ] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:33:32 [INFO ] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:33:32 [INFO ] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:33:32 [ERROR] [8] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando path de la dll en ejecución.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Estableciendo filtro para conexiones.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de saldos.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-22 16:33:32 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:33:34 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.Login: Recuperando lista de socios.
+2022-02-22 16:33:34 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-22 16:33:34 [INFO ] [8] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:33:34 [INFO ] [8] APITrylogycWebsite.Controllers.ServiceController.Login: Login() Fin...
+2022-02-22 16:33:38 [INFO ] [15] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:33:38 [INFO ] [15] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:33:38 [INFO ] [15] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: GetUserAssociates() Comienzo...
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:33:38 [INFO ] [15] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:33:38 [INFO ] [15] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:33:38 [INFO ] [15] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:33:38 [ERROR] [15] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando path de la dll en ejecución.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Estableciendo filtro para conexiones.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetUserAssociates: Recuperando lista de socios.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetAssociatesDataTableFromXml: GetAssociatesDataTableFromXml() Comienzo.
+2022-02-22 16:33:38 [INFO ] [15] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:33:38 [INFO ] [15] APITrylogycWebsite.Controllers.ServiceController.GetUserAssociates: Login() Fin...
+2022-02-22 16:33:38 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: GetUserBalances() Comienzo...
+2022-02-22 16:33:38 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: BaseRepository() Comienzo...
+2022-02-22 16:33:38 [INFO ] [14] DataAccess.Repositories.BaseRepository..ctor: Setting connection string to server=192.168.20.20;User ID=sa;password=7Ry1ogyc;Persist Security Info=False;database=Trylogyc;
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: GetUserAssociates() Comienzo...
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: GetConnectionIdsFromUserId() Comienzo...
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Recuperando conexiones del usuario con id 1.
+2022-02-22 16:33:38 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Comienzo...
+2022-02-22 16:33:38 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Disposing Data Adapter.
+2022-02-22 16:33:38 [INFO ] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: Closing connection.
+2022-02-22 16:33:38 [ERROR] [14] DataAccess.Repositories.UserRepository.GetConnectionsByUserId: GetConnectionsByUserId() Fin.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionIdsFromUserId: Conexiones recuperadas.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando path de la dll en ejecución.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetExecutingAssemblyPath: GetExecutingAssemblyPath() Comienzo.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Estableciendo filtro para conexiones.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetConnectionsFilter: GetConnectionsFilter() Comienzo.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetUserBalances: Recuperando lista de saldos.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetBalancesDataTableFromXml: GetBalancesDataTableFromXml() Comienzo.
+2022-02-22 16:33:38 [INFO ] [14] BLLTrylogycWebsite.Models.BLLUser.GetDataViewFromXml: GetDataViewFromXml() Comienzo.
+2022-02-22 16:33:39 [INFO ] [14] APITrylogycWebsite.Controllers.ServiceController.GetUserBalances: Login() Fin...

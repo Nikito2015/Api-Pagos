@@ -920,30 +920,64 @@ namespace BLLTrylogycWebsite.Models
         {
             try
             {
-                using (var message = new MailMessage())
-                {
-                    message.From = new MailAddress(_configuration.GetSection("email").Value, _configuration.GetSection("site").Value);
-                    message.To.Add(new MailAddress(email));
-                    message.Subject = "Sus datos de Acceso al sitio " + _configuration.GetSection("site").Value;
-                    message.IsBodyHtml = true;
-                    message.Body = "<html><body><span style='font-family:Georgia;font-size:14px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:000000;background-color:ffffff;'><p>" + "Nueva Consulta desde Mi sitio Web" + "<br/>Su contraseña para acceder al sitio: " + password + "<br/>" + "</p></span></body></html>";
+                CDO.Message smtp = new CDO.Message();
+                CDO.Configuration smtpConfig = new CDO.Configuration();
 
-                    using (var client = new SmtpClient())
-                    {
-                        client.Host = _configuration.GetSection("host").Value.ToString();
-                        client.Port = Convert.ToInt32(_configuration.GetSection("port").Value);
-                        client.UseDefaultCredentials = Convert.ToBoolean((_configuration.GetSection("usedefaultcredentials").Value));
-                        client.Credentials = new System.Net.NetworkCredential(_configuration.GetSection("email").Value, _configuration.GetSection("password").Value);
-                        client.EnableSsl = Convert.ToBoolean(_configuration.GetSection("enablessl").Value);
-                        client.Send(message);
-                    }
-                }
+                ADODB.Fields fieldCollection = smtpConfig.Fields;
+                ADODB.Field serverField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/smtpserver"];
+                serverField.Value = _configuration.GetSection("host").Value.ToString();
+                ADODB.Field usernameField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/sendusername"];
+                usernameField.Value = _configuration.GetSection("email").Value;
+                ADODB.Field passwordField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/sendpassword"];
+                passwordField.Value = _configuration.GetSection("password").Value;
+                ADODB.Field authField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/smtpauthenticate"];
+                authField.Value = 1;
+                ADODB.Field timeoutField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout"];
+                timeoutField.Value = 5000;
+                ADODB.Field serverPortField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/smtpserverport"];
+                serverPortField.Value = Convert.ToInt32(_configuration.GetSection("port").Value);
+                ADODB.Field sendUsingField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/sendusing"];
+                sendUsingField.Value = 2;
+                ADODB.Field useSSLField = fieldCollection["http://schemas.microsoft.com/cdo/configuration/smtpusessl"];
+                useSSLField.Value = Convert.ToBoolean(_configuration.GetSection("enablessl").Value) ? "1" : "0";
+                fieldCollection.Update();
+
+                smtp.Configuration = smtpConfig;
+                smtp.Subject = "Sus datos de Acceso al sitio " + _configuration.GetSection("site").Value;
+                smtp.From = _configuration.GetSection("email").Value;
+                smtp.To = email;
+                smtp.Sender = _configuration.GetSection("empresa").Value;
+                smtp.Organization = _configuration.GetSection("empresa").Value;
+                smtp.ReplyTo = _configuration.GetSection("email").Value;
+                smtp.HTMLBody = "<html><body><span style='font-family:Georgia;font-size:14px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:000000;background-color:ffffff;'><p>" + "Nueva Consulta desde Mi sitio Web" + "<br/>Su contraseña para acceder al sitio: " + password + "<br/>" + "</p></span></body></html>";
+                smtp.Send();
+
+                //using (var message = new MailMessage())
+                //{
+                //    message.From = new MailAddress(_configuration.GetSection("email").Value, _configuration.GetSection("site").Value);
+                //    message.To.Add(new MailAddress(email));
+                //    message.Subject = "Sus datos de Acceso al sitio " + _configuration.GetSection("site").Value;
+                //    message.IsBodyHtml = true;
+                //    message.Body = "<html><body><span style='font-family:Georgia;font-size:14px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:000000;background-color:ffffff;'><p>" + "Nueva Consulta desde Mi sitio Web" + "<br/>Su contraseña para acceder al sitio: " + password + "<br/>" + "</p></span></body></html>";
+
+                //    using (var client = new SmtpClient())
+                //    {
+                //        client.Host = _configuration.GetSection("host").Value.ToString();
+                //        client.Port = Convert.ToInt32(_configuration.GetSection("port").Value);
+                //        client.UseDefaultCredentials = Convert.ToBoolean((_configuration.GetSection("usedefaultcredentials").Value));
+                //        client.Credentials = new System.Net.NetworkCredential(_configuration.GetSection("email").Value, _configuration.GetSection("password").Value);
+                //        client.EnableSsl = Convert.ToBoolean(_configuration.GetSection("enablessl").Value);
+                //        client.Send(message);
+                //    }
+                //}
                 return true;
             }
 
             catch (Exception ex)
             {
                 //TODO: Si el envío de mail fracasara, el usuario nunca se enteraría y tampoco podría registrarse de nuevo. Que hacemos en esta instancia?
+                _log.Error($"Host Envio:{_configuration.GetSection("host").Value}");
+                _log.Error($"Password Envio:{_configuration.GetSection("password").Value}");
                 _log.Error($"Ocurrió una excepción al intentar enviar el mail de registro al usuario {email}. Error: {ex.Message}");
                 return false;
             }
